@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom">
+  <title>The Process</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="acedwill.com/"/>
+  <updated>2019-12-03T13:41:30.000Z</updated>
+  <id>acedwill.com/</id>
+  
+  <author>
+    <name>aceDwill</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MyBatis配置无效</title>
+    <link href="acedwill.com/2019/12/03/mybatis-config/"/>
+    <id>acedwill.com/2019/12/03/mybatis-config/</id>
+    <published>2019-12-03T13:41:30.000Z</published>
+    <updated>2019-12-03T13:41:30.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="acedwill.com/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="MyBatis" scheme="acedwill.com/tags/MyBatis/"/>
+    
+      <category term="Java" scheme="acedwill.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JPA saveAll() 踩坑</title>
+    <link href="acedwill.com/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/"/>
+    <id>acedwill.com/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/</id>
+    <published>2019-11-16T06:54:05.000Z</published>
+    <updated>2019-11-16T06:54:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="acedwill.com/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="Java" scheme="acedwill.com/tags/Java/"/>
+    
+      <category term="JPA" scheme="acedwill.com/tags/JPA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初学Java代理机制</title>
+    <link href="acedwill.com/2018/12/23/java-proxy/"/>
+    <id>acedwill.com/2018/12/23/java-proxy/</id>
+    <published>2018-12-23T08:07:47.000Z</published>
+    <updated>2019-11-16T06:54:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="总结" scheme="acedwill.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="Java" scheme="acedwill.com/tags/Java/"/>
+    
+      <category term="cglib" scheme="acedwill.com/tags/cglib/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VMware实现复制粘贴功能</title>
+    <link href="acedwill.com/2018/12/16/VMware-copy-paste/"/>
+    <id>acedwill.com/2018/12/16/VMware-copy-paste/</id>
+    <published>2018-12-16T08:41:43.000Z</published>
+    <updated>2019-11-16T06:54:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="acedwill.com/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="Manjaro" scheme="acedwill.com/tags/Manjaro/"/>
+    
+      <category term="VMware" scheme="acedwill.com/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从Hexo到WordPress</title>
+    <link href="acedwill.com/2018/11/17/wordpress-blog/"/>
+    <id>acedwill.com/2018/11/17/wordpress-blog/</id>
+    <published>2018-11-17T07:52:17.000Z</published>
+    <updated>2019-11-16T06:54:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="acedwill.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="hexo" scheme="acedwill.com/tags/hexo/"/>
+    
+      <category term="瞎扯" scheme="acedwill.com/tags/%E7%9E%8E%E6%89%AF/"/>
+    
+      <category term="blog" scheme="acedwill.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>租房小记</title>
+    <link href="acedwill.com/2017/08/29/house-renting/"/>
+    <id>acedwill.com/2017/08/29/house-renting/</id>
+    <published>2017-08-29T07:35:07.000Z</published>
+    <updated>2019-11-16T06:54:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="acedwill.com/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="租房" scheme="acedwill.com/tags/%E7%A7%9F%E6%88%BF/"/>
+    
+  </entry>
+  
+</feed>

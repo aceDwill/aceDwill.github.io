@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Process</title><meta name="description"><meta name="author" content="aceDwill"><meta name="copyright" content="aceDwill"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="acedwill.com/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="The Process"><meta property="og:url" content="acedwill.com/"><meta property="og:site_name" content="The Process"><meta property="og:description"><meta property="og:image" content="acedwill.com/img/avatar.png"><meta property="article:published_time" content="2020-07-16T15:09:30.802Z"><meta property="article:modified_time" content="2020-07-16T15:09:30.802Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="alternate" href="/atom.xml" title="The Process" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">The Process</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">The Process</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/12/03/mybatis-config/" title="MyBatis配置无效">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/problem-solution-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis配置无效"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/12/03/mybatis-config/" title="MyBatis配置无效">MyBatis配置无效</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-12-03 21:41:30"><i class="far fa-calendar-alt"></i>2019-12-03</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%B8%A9%E5%9D%91/">踩坑</a></span></div><div class="content">问题描述MyBatis，数据库字段名是下划线，java类中是驼峰命名，不能映射，搜了一下，需要在配置文件中开启配置
+1mybatis.configuration.map-underscore-to-camel-case=true
+但是，发现在多数据源情况下，配置不能生效。
+解决方案在需要使用的数据源配置类中，添加配置代码
+示例123456789101112131415//从配置文件读取配置，注入   @Bean @ConfigurationProperties(prefix = "mybatis.configuration")public org.apache.ibatis.session.Configuration configuration()&#123;    return new org.apache.ibatis.session.Configuration();&#125;@Bean(name = "projectSqlSessionFactory")public SqlSessionFactory sqlSessionFactory(@Qualifier("projectD ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/" title="JPA saveAll() 踩坑">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/spring_data_jpa.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JPA saveAll() 踩坑"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/" title="JPA saveAll() 踩坑">JPA saveAll() 踩坑</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-11-16 14:54:05"><i class="far fa-calendar-alt"></i>2019-11-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%B8%A9%E5%9D%91/">踩坑</a></span></div><div class="content">
+            写完后才发现，日志里多条insert和批量插入，时间差不多是什么鬼？这个saveAll()有毒 🙃 
+          
+问题描述一组数据，批量插入，使用JPA的saveAll()方法，发现还是一条数据一条数据的插入
+问题原因@GeneratedValueSpring Boot JPA Hibernate saveAll 速度慢原因调查与调优
+搜了一下，大概原因和上面差不多，基本上在定义model时，都这样处理id
+123@Id@GeneratedValue(strategy = GenerationType.IDENTITY)private Long id;
+@GeneratedValue(strategy = GenerationType.IDENTITY) 这个注解，会由hibernate主键策略生成器生成自增id，这样就不用自己控制id，所以存入数据时，数据一个一个获取id，导致数据一条一条插入，所以一个批量插入必要条件要自己设置数据id
+缺少配置配置spring.jpa.properties.hibernate.jdbc.batch_size=5 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/12/23/java-proxy/" title="初学Java代理机制">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/cover_hacker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="初学Java代理机制"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/23/java-proxy/" title="初学Java代理机制">初学Java代理机制</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-12-23 16:07:47"><i class="far fa-calendar-alt"></i>2018-12-23</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%80%BB%E7%BB%93/">总结</a></span></div><div class="content">初学Java代理机制，看了好几篇博客终于有点感觉，用我自己的理解写了篇总结，如有不对的地方，欢迎大佬指正。
+什么是代理我的理解就是给这段程序请了一个”经纪人”，执行的时候还是这段程序来执行，只不过前后有些事务可以交给”经纪人”打理，就像明星的经纪人一样，帮明星打理一些事情，唱歌、演戏还得由明星自己去做。
+静态代理我以主播为例。
+主播最主要的工作就是直播，所以定义一个接口。
+123interface Streamer &#123;    public void work();&#125;
+
+主播里面主要有游戏主播，唱歌主播等，所以先定义两个类实现主播这个接口
+12345678910111213class GameStreamer implements Streamer&#123;    @Override    public void work() &#123;        System.out.println("直播打游戏");    &#125;&#125;class SingerStreamer implements Streamer&#123;    @Override     ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2018/12/16/VMware-copy-paste/" title="VMware实现复制粘贴功能">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/cover_hacker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VMware实现复制粘贴功能"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/12/16/VMware-copy-paste/" title="VMware实现复制粘贴功能">VMware实现复制粘贴功能</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-12-16 16:41:43"><i class="far fa-calendar-alt"></i>2018-12-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%B8%A9%E5%9D%91/">踩坑</a></span></div><div class="content">VMware装了一个Manjaro，不知道怎么实现复制粘贴。
+开始搜了半天要手动安装VMware tools，结果安装上了也不能启用，搜了一下Manjaro的wiki，居然有这个问题的解决。
+
+Installing Manjaro under VMWareThere are no special requirements to installing Manjaro on VMWare. open-vmware-tools is pre-installed. It should “just work”
+
+
+Copy and PasteIf copy and paste does not work, you may need to install gtkmm3 and re-boot. vmware-user-suid-wrapper depends on gtkmm, but it’s not a required dependency of the package. See: https://bugs.archlinux.org/task/43159
+
+就是说Manjaro自带open ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2018/11/17/wordpress-blog/" title="从Hexo到WordPress">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/wordpress.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从Hexo到WordPress"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/11/17/wordpress-blog/" title="从Hexo到WordPress">从Hexo到WordPress</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-11-17 15:52:17"><i class="far fa-calendar-alt"></i>2018-11-17</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">
+            然后现在我又换回hexo了，毕竟颜值即正义 😂hexo教程推荐
+          
+
+大半年没写博客了，突然心血来潮，这几天又搞了起来，我真是个不折腾会死星人，手动捂脸。。就顺便总结一下这几天的收获吧
+关于域名由于很早以前就已经搞了一个VPS玩玩，但以前注册的无实名域名没有续费，导致找个域名成了一个大难题。
+学生党既要便宜的，又要无实名的，万网等国内的域名注册基本就pass了。
+名气最大的godaddy注册了才知道多坑，第一年12，第二年续费就上百了。。好不容易找到一个打五折的优惠码，居然告诉我支付宝和银联都不能支付，真是服了，更不用说隐私保护还要收我一笔，果断放弃。
+后来在网上找了半天，看了大家都极力推荐一个性价比极高的域名注册商namesilo，免费隐私保护，这几天好像还在打折什么的，6刀果断入手。好像由于搞活动的原因，只能先注册一年，那就先凑合用了，续费的时候再说。
+关于hexo和WordPress开始的时候在网上搜建博客工具，都是什么”从WordPress到Hexo”，一大堆都推荐用Hexo，那就果断Hexo走起。
+用了几个月，感受嘛，静态网站，非 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2017/08/29/house-renting/" title="租房小记">     <img class="post_bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/wtf.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="租房小记"></a></div><div class="recent-post-info"><a class="article-title" href="/2017/08/29/house-renting/" title="租房小记">租房小记</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2017-08-29 15:35:07"><i class="far fa-calendar-alt"></i>2017-08-29</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%B8%A9%E5%9D%91/">踩坑</a></span></div><div class="content">刚毕业就被社会给狠狠地上了一课，租房子的体验真是差，搬砖两个月的钱基本都被坑进去了。吃一堑，长一智，总结了几点，避免各位今后上当受骗。
+千万不要找包租公司包租公司也就是代理，就是一个专门的公司把房东的房子收过来自己再转租给他人。
+起初，我也有在网上看到”千万不要找代理…”之类的，但是后面看到房子还行，价格比较适中，就没引起注意。签了合同才发现，这样钱，那样钱不停交。
+最扯的就是要交1000块押金，说什么只要这个月不吸毒，不犯事，下个月就退给我们，还打了个欠条。结果，过了两个月，期间隔个几天就会催他一次。尼玛，后面直接关机找不到人了，后面找到另外一个公司的人才说他离职了，而且这钱他们公司不会收，要找只能找本人要，我qnmgb，我去哪找他要。所以，为了以后的住房体验，划重点，千万别找包租公司！！！
+关于中介虽然说屁股决定脑袋，但是我还是想说中介这个钱赚的我实在不服，后面房子转租更加坚定我这一想法。为什么呢？房子后面要转租，网上发布了招租信息，就有三个中介打来电话说帮我推销，我这个时候作为转租当然巴不得你早点带人看房把房转出去，但是想起我当初租房找中介，我就觉得这完全TM是智商税。
+你完全可 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">aceDwill</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">6</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">10</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">3</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2019/12/03/mybatis-config/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/problem-solution-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="MyBatis配置无效" alt="MyBatis配置无效"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2019/12/03/mybatis-config/" title="MyBatis配置无效">MyBatis配置无效</div><time class="aside-post_meta post-meta__date" title="发表于 2019-12-03 21:41:30">2019-12-03</time></div></a></div><div class="aside-recent-post"><a href="/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/spring_data_jpa.png" onerror="this.onerror=null;this.src='/img/404.jpg'" title="JPA saveAll() 踩坑" alt="JPA saveAll() 踩坑"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2019/11/16/JPA-%E8%B8%A9%E5%9D%91/" title="JPA saveAll() 踩坑">JPA saveAll() 踩坑</div><time class="aside-post_meta post-meta__date" title="发表于 2019-11-16 14:54:05">2019-11-16</time></div></a></div><div class="aside-recent-post"><a href="/2018/12/23/java-proxy/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/cover_hacker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="初学Java代理机制" alt="初学Java代理机制"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/12/23/java-proxy/" title="初学Java代理机制">初学Java代理机制</div><time class="aside-post_meta post-meta__date" title="发表于 2018-12-23 16:07:47">2018-12-23</time></div></a></div><div class="aside-recent-post"><a href="/2018/12/16/VMware-copy-paste/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/cover_hacker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="VMware实现复制粘贴功能" alt="VMware实现复制粘贴功能"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/12/16/VMware-copy-paste/" title="VMware实现复制粘贴功能">VMware实现复制粘贴功能</div><time class="aside-post_meta post-meta__date" title="发表于 2018-12-16 16:41:43">2018-12-16</time></div></a></div><div class="aside-recent-post"><a href="/2018/11/17/wordpress-blog/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://acedwill-pics.oss-cn-shanghai.aliyuncs.com/img/wordpress.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="从Hexo到WordPress" alt="从Hexo到WordPress"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/11/17/wordpress-blog/" title="从Hexo到WordPress">从Hexo到WordPress</div><time class="aside-post_meta post-meta__date" title="发表于 2018-11-17 15:52:17">2018-11-17</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%BB%E7%BB%93/"><span class="card-category-list-name">总结</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%B8%A9%E5%9D%91/"><span class="card-category-list-name">踩坑</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/JPA/" style="font-size: 16px; color: #999">JPA</a> <a href="/tags/Java/" style="font-size: 22px; color: #99a9bf">Java</a> <a href="/tags/Manjaro/" style="font-size: 16px; color: #999">Manjaro</a> <a href="/tags/MyBatis/" style="font-size: 16px; color: #999">MyBatis</a> <a href="/tags/VMware/" style="font-size: 16px; color: #999">VMware</a> <a href="/tags/blog/" style="font-size: 16px; color: #999">blog</a> <a href="/tags/cglib/" style="font-size: 16px; color: #999">cglib</a> <a href="/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/tags/%E7%9E%8E%E6%89%AF/" style="font-size: 16px; color: #999">瞎扯</a> <a href="/tags/%E7%A7%9F%E6%88%BF/" style="font-size: 16px; color: #999">租房</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/12/"><span class="card-archive-list-date">十二月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/11/"><span class="card-archive-list-date">十一月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/12/"><span class="card-archive-list-date">十二月 2018</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/11/"><span class="card-archive-list-date">十一月 2018</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/08/"><span class="card-archive-list-date">八月 2017</span><span class="card-archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">6</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By aceDwill</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "今日事&#44;今日畢,Never put off till tomorrow what you can do today".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: true,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '今日事&#44;今日畢'
+}</script></body></html>
